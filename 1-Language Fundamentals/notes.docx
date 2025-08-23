@@ -1,1 +1,24 @@
 Learning JS from course of Hitesh Chaudhary and Jonas Schmedtmann. My goal is to learn JS to get a remote developer Job. Here is the theoretical notes of this section. The notes is given as comments in the code part.
+RESOURCES = HITESH + JONAS
+
+HELLO WORLD => use chrome for testing code initially. write JS in console first. inspect -> console. u can test, debug, and evaluate expression here, not full fledged application. write alert('hello'). create basic variable using let. try writing conditional statement with alert using === operator. console can also be used to evaluate expression and doing calculation. 
+
+BRIEF INTRO => Topic - INTRO to JS.  high-level (easy to write, no low level operation), object-oriented (data stored in the form of object), multi-paradigm (supports multiple coding styles)programming language (instruction to computer, create logic and behavior). JS defines the behavior and action of website. ex- spinner in X means data loading, hover shows profile etc. is made possible with JS. You can build both frontend (interactive interface, Single page app) and backend (api, server logic, database) with JS. Mobile and desktop app using frameworks. 
+
+LINKING JS => Download the starter and final code from github. Every section code available. start with starter and reach final. ctrl + B to toggle sidebar. 
+Inline JS - use script tag at the end of body tag and write your JS code there. style tag in head for styling. To print result of calculation, use console.log(). Hard to maintain and separate logic from structure. 
+External JS - create a script.js file and write code there and connect it with index.html file using script src way. Clean separation of concerns. Reusable across multiple pages. always write script tag at end so that html load fully before JS. 
+
+JS Story(H) =>  previously used inside browser or embeded in HTML, but now act as a full fledged programming language run outside browser using nodejs and capable of building web apps, server, desktop app, Mobile app. web app is interactive and build using programming logic and respond to user actions. 
+You can write basic code in console window. To run a code, we need a software program that compile or interpret it. Javascript engine is that program, which previously inside browser console. compiler convert code into another language (often machine code) before execution and interpreter read and execute code line by line. 
+V8 engine is for running JS outside browser as it understand the JS code. The V8 engine takes your JS code and converts it into machine code so your computer can execute it. nodejs is js runtime enviornment built on V8 engine. A runtime environment is everything needed to execute JavaScript code outside the V8 engine, provides the "extra tools" around V8 that allow JS to interact with the outside world. V8 Engine = Car Engine 🚗 → It converts fuel (JS code) into movement (machine code). Runtime Environment = Whole Car 🚘 → The engine + wheels, steering, brakes (APIs, libraries, environment). nodejs basically takes that V8 engine and make an application that allow to execute js code as a standalone application. after that JS become a programming language that uses nodejs as runtime enviornment and able to do much more.  
+Many frameworks emerges for different purposes. 
+With HTML and css, u can build web pages, but with JS, u build web applications. 
+
+HOW JS EXECUTE CODE - BTS => open a folder and create the file with .js extension. log + tab to autocomplete. ctrl + ` to open terminal. node -v to check version. node fil.js to run JS code in terminal. 
+BTS of JS - Step 1 = create a .js file.
+Step 2 (Parsing) - JS engine read code and identifies keyword, symbol, special characters and so etc. it basically tries to understand the code logic and flow. Tokenization means breaking code into tokens on the basis of special keywords and symbols. Then create an abstract syntax tree (AST) that represent code logic. JS detect errors during parsing and stop further step immidiately. Shows syntax error.  
+Step 3 (JIT compilation) - JIT Compiler converts code just before execution into bytecode (faster to run than source code). Bytecode is not 0s and 1s yet — but a step closer. This makes future executions of the same code much faster. Bytecode allows partial compilation and reuse. Bytecode is not machine code (0 and 1s). 
+Step 4 (machine code conversion) - converting bytecode to machine code so that CPU executes it and show the output.
+Just basics. Don't try to go deep with the internal working of nodejs or so.
+There can be different JS runtimes (nodejs, bun, deno) and different JS engines (V8, JavaScriptCore). Learn why how and what properly to understand things better. 
